@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryItem component render HistoryItem component 1`] = `
+<DocumentFragment>
+  <h3>
+    GET
+  </h3>
+  <p>
+    https://www.thecocktaildb.com/api/json/v1/1/random.php
+  </p>
+</DocumentFragment>
+`;
