@@ -9,6 +9,7 @@ describe('Controls component', () => {
     const { asFragment } = render(<Controls
       url="https://www.thecocktaildb.com/api/json/v1/1/random.php"
       method="GET"
+      body=""
       onSubmit={() => { }}
       onChange={() => { }}
     />);

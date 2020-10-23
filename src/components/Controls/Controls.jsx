@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Controls = ({ url, method, onChange, onSubmit }) => {
+const Controls = ({ url, method, body, onChange, onSubmit }) => {
   return (
     <section>
       <form onSubmit={onSubmit}>
@@ -25,7 +25,7 @@ const Controls = ({ url, method, onChange, onSubmit }) => {
             <input type="radio" id="delete" name="method" value="DELETE" checked={method === 'DELETE'} onChange={onChange} />
             <label htmlFor="delete">DELETE</label>
           </div>
-
+          <textarea placeholder="Raw JSON Body" name="body" value={body} onChange={onChange}></textarea>
           <button>Send Request</button>
         </section>
       </form>
@@ -36,6 +36,7 @@ const Controls = ({ url, method, onChange, onSubmit }) => {
 Controls.propTypes = {
   url: PropTypes.string.isRequired,
   method: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired
 };
