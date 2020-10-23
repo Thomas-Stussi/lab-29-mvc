@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryList component render HistoryList component 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <h3>
+        GET
+      </h3>
+      <p>
+        https://www.thecocktaildb.com/api/json/v1/1/random.php
+      </p>
+      <p />
+    </li>
+    <li>
+      <h3>
+        POST
+      </h3>
+      <p>
+        https://www.thecocktaildb.com/api/json/v1/1/random.php
+      </p>
+      <p />
+    </li>
+    <li>
+      <h3>
+        GET
+      </h3>
+      <p>
+        futuramaapi.herokuapp.com/api/quotes
+      </p>
+      <p />
+    </li>
+  </ul>
+</DocumentFragment>
+`;
