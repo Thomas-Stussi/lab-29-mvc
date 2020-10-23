@@ -8,5 +8,6 @@ exports[`HistoryItem component render HistoryItem component 1`] = `
   <p>
     https://www.thecocktaildb.com/api/json/v1/1/random.php
   </p>
+  <p />
 </DocumentFragment>
 `;

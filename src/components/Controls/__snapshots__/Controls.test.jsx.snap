@@ -69,6 +69,10 @@ exports[`Controls component render Controls component 1`] = `
             DELETE
           </label>
         </div>
+        <textarea
+          name="body"
+          placeholder="Raw JSON Body"
+        />
         <button>
           Send Request
         </button>

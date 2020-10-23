@@ -8,24 +8,27 @@ exports[`HistoryList component render HistoryList component 1`] = `
         GET
       </h3>
       <p>
-        GET
+        https://www.thecocktaildb.com/api/json/v1/1/random.php
       </p>
+      <p />
     </li>
     <li>
       <h3>
         POST
       </h3>
       <p>
-        POST
+        https://www.thecocktaildb.com/api/json/v1/1/random.php
       </p>
+      <p />
     </li>
     <li>
       <h3>
         GET
       </h3>
       <p>
-        GET
+        futuramaapi.herokuapp.com/api/quotes
       </p>
+      <p />
     </li>
   </ul>
 </DocumentFragment>
