@@ -75,13 +75,17 @@ exports[`App component renders App 1`] = `
               name="body"
               placeholder="Raw JSON Body"
             />
-            <button>
+            <button
+              data-testid="button"
+            >
               Send Request
             </button>
           </section>
         </form>
       </section>
-      <pre>
+      <pre
+        data-testid="display"
+      >
         <div
           class="react-json-view"
           style="font-family: monospace; cursor: default; background-color: rgba(0, 0, 0, 0); position: relative;"

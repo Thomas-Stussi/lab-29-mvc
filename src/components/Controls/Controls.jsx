@@ -26,7 +26,7 @@ const Controls = ({ url, method, body, onChange, onSubmit }) => {
             <label htmlFor="delete">DELETE</label>
           </div>
           <textarea placeholder="Raw JSON Body" name="body" value={body} onChange={onChange}></textarea>
-          <button>Send Request</button>
+          <button data-testid="button">Send Request</button>
         </section>
       </form>
     </section>
