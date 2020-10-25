@@ -2,7 +2,10 @@
 
 exports[`Display component render Display component 1`] = `
 <DocumentFragment>
-  <pre>
+  <pre
+    class="Display"
+    data-testid="display"
+  >
     <div
       class="react-json-view"
       style="font-family: monospace; cursor: default; background-color: rgba(0, 0, 0, 0); position: relative;"

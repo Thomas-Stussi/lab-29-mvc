@@ -1,11 +1,12 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Controls.css';
 
 const Controls = ({ url, method, body, onChange, onSubmit }) => {
   return (
     <section>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className={styles.Controls}>
         <input type="text" name="url" placeholder="URL" value={url} onChange={onChange} />
         <section>
 
@@ -26,7 +27,8 @@ const Controls = ({ url, method, body, onChange, onSubmit }) => {
             <label htmlFor="delete">DELETE</label>
           </div>
           <textarea placeholder="Raw JSON Body" name="body" value={body} onChange={onChange}></textarea>
-          <button>Send Request</button>
+          <br/>
+          <button data-testid="button">Send Request</button>
         </section>
       </form>
     </section>

@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
+import styles from './HistoryList.css';
 
 const HistoryList = ({ histories }) => {
   const historyElements = histories.map(history => (
@@ -11,7 +12,8 @@ const HistoryList = ({ histories }) => {
   ));
 
   return (
-    <ul>
+    <ul className={styles.HistoryList}>
+      <li>Request History</li>
       {historyElements}
     </ul>
   );

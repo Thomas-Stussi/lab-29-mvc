@@ -1,0 +1,7 @@
+.Display{
+  border: 1px solid black;
+  width: 100%;
+  overflow: auto;
+  margin: 2.5px;
+  min-height: 50vh;
+}

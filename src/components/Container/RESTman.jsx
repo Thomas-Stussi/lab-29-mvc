@@ -4,6 +4,8 @@ import HistoryList from '../History/HistoryList';
 import Controls from '../Controls/Controls';
 import Display from '../Display/Display';
 import { apiFetch } from '../../services/apiFetch';
+import styles from './RESTman.css';
+import headStyle from './Header.css';
 
 export default class RESTman extends Component {
   state = {
@@ -18,7 +20,7 @@ export default class RESTman extends Component {
     this.setState({ [target.name]: target.value });
   }
 
-  handleSubmit = async(event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
     await this.handleFetch();
@@ -29,7 +31,7 @@ export default class RESTman extends Component {
         method: this.state.method,
         body: this.state.body,
         key: `${this.state.url}+${this.state.method}`
-      }] 
+      }]
     }
     );
   }
@@ -45,8 +47,12 @@ export default class RESTman extends Component {
 
     return (
       <>
-        <section>
-          <HistoryList histories={histories} />
+        <section className={styles.RESTman}>
+          <div>
+            <header className={headStyle.Header}>RESTman</header>
+            <HistoryList histories={histories} />
+          </div>
+
           <div>
             <Controls
               url={url}
