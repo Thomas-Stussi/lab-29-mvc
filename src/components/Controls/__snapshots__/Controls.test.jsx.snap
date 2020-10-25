@@ -3,7 +3,9 @@
 exports[`Controls component render Controls component 1`] = `
 <DocumentFragment>
   <section>
-    <form>
+    <form
+      class="Controls"
+    >
       <input
         name="url"
         placeholder="URL"
@@ -73,6 +75,7 @@ exports[`Controls component render Controls component 1`] = `
           name="body"
           placeholder="Raw JSON Body"
         />
+        <br />
         <button
           data-testid="button"
         >

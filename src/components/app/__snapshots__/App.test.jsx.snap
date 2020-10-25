@@ -2,11 +2,28 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <section>
-    <ul />
+  <section
+    class="RESTman"
+  >
+    <div>
+      <header
+        class="Header"
+      >
+        RESTman
+      </header>
+      <ul
+        class="HistoryList"
+      >
+        <li>
+          Request History
+        </li>
+      </ul>
+    </div>
     <div>
       <section>
-        <form>
+        <form
+          class="Controls"
+        >
           <input
             name="url"
             placeholder="URL"
@@ -75,6 +92,7 @@ exports[`App component renders App 1`] = `
               name="body"
               placeholder="Raw JSON Body"
             />
+            <br />
             <button
               data-testid="button"
             >
@@ -84,6 +102,7 @@ exports[`App component renders App 1`] = `
         </form>
       </section>
       <pre
+        class="Display"
         data-testid="display"
       >
         <div

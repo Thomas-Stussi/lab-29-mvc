@@ -2,7 +2,12 @@
 
 exports[`HistoryList component render HistoryList component 1`] = `
 <DocumentFragment>
-  <ul>
+  <ul
+    class="HistoryList"
+  >
+    <li>
+      Request History
+    </li>
     <li>
       <h3>
         GET

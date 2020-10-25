@@ -3,6 +3,7 @@
 exports[`Display component render Display component 1`] = `
 <DocumentFragment>
   <pre
+    class="Display"
     data-testid="display"
   >
     <div

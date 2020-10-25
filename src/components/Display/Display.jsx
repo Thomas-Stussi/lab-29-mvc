@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import styles from './Display.css';
 import ReactJson from 'react-json-view';
 
 const Display = ({ display }) => {
   return (
-    <pre data-testid="display">
+    <pre data-testid="display" className={styles.Display}>
       <ReactJson src={display} displayDataTypes={false} />
     </pre>
   );

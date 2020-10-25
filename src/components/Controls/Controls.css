@@ -1,0 +1,7 @@
+.Controls{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  border: 1px solid black;
+  margin: 2.5px;
+}
